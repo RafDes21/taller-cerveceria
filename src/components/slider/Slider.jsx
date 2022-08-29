@@ -144,8 +144,8 @@ const Slider = () => {
   }, [item]);
 
   return (
-    <div className="slider" onClick={opacity} style={aparece}>
-      <img className="slider-img" src={images[item]} alt="imagenesDeFondo" />
+    <div className="slider" onClick={opacity} >
+      <img className="slider-img" style={aparece} src={images[item]} alt="imagenesDeFondo" />
       <img
         className="slider-logo"
         style={logo}
