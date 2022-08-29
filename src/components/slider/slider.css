@@ -1,0 +1,82 @@
+.slider {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+ 
+}
+.slider::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.285) 50%,rgba(0, 0, 0, 0.648) 80%);
+}
+
+.slider .slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+
+}
+.slider .slider-logo {
+  width: 25%;
+  left: 15%;
+  top: -5%;
+  position: absolute;
+  z-index: 2;
+}
+.slider .slider-vector {
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(-17%);
+  top: -13%;
+}
+.slider .slider-tacos {
+  width: 38%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  right: -5%;
+}
+.slider .slider-parrafo {
+  text-transform: uppercase;
+  position: absolute;
+  color: #ffffff;
+  font-weight: lighter;
+  width: 45%;
+  height: 30%;
+  font-size: 20px;
+  bottom: 20%;
+  left: 1%;
+  z-index: 2;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .slider {
+    width: 100%;
+    height: 330px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .slider {
+    width: 100%;
+    height: 350px;
+  }
+  .slider .slider-parrafo {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 901px) {
+  .slider {
+    width: 100%;
+    height: 730px;
+  }
+  .slider .slider-parrafo {
+    font-size: 50px;
+  }
+}
