@@ -140,7 +140,7 @@ const Slider = () => {
   };
 
   useEffect(() => {
-    setAparece({ opacity: "1", transitionDuration: "2s" });
+    setAparece({ opacity: "1", transitionDuration: "1s" });
   }, [item]);
 
   return (
